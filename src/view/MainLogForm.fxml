@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainLogContext" prefHeight="411.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainLogFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-4.0" prefHeight="421.0" prefWidth="269.0" style="-fx-background-color: #2C3E50;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="128.0" onAction="#openAdminLoginFormOnAction" prefHeight="53.0" prefWidth="240.0" style="-fx-background-color: #BE2EDD; -fx-background-radius: 25;" text="Administrator" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="211.0" onAction="#openReceptionistLoginFormOnAction" prefHeight="53.0" prefWidth="240.0" style="-fx-background-color: #BE2EDD; -fx-background-radius: 25;" text="Receptionist" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="417.0" fitWidth="522.0" layoutX="267.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/5588546.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

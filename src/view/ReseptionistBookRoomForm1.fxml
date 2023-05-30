@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionistBookRoomFormContext" prefHeight="411.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReseptionistBookRoomForm1Controller">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="417.0" prefWidth="225.0" style="-fx-background-color: #BDC3C7;">
+         <children>
+            <Label blendMode="MULTIPLY" layoutX="11.0" layoutY="27.0" prefHeight="27.0" prefWidth="212.0" text="Blue Ocean Hotel." textAlignment="CENTER" textFill="#2980b9">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutY="64.0" prefHeight="2.0" prefWidth="239.0" style="-fx-background-color: #000000;" />
+            <Button layoutX="14.0" layoutY="99.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="212.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" text="           Rooms">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="34.0" layoutY="102.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/outline_hotel_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="184.0" mnemonicParsing="false" onAction="#openOrderMealFormOnAction" prefHeight="50.0" prefWidth="212.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" text="        Meal">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Button>
+            <Separator layoutX="6.0" layoutY="335.0" prefHeight="2.0" prefWidth="239.0" style="-fx-background-color: #000000;" />
+            <Button layoutX="54.0" layoutY="353.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" text="Log Out">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="44.0" layoutX="32.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/outline_restaurant_menu_black_24dp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblreceptionistBook" layoutX="245.0" layoutY="63.0" prefHeight="343.0" prefWidth="544.0">
+        <columns>
+          <TableColumn fx:id="colroomno" prefWidth="89.0" text="Room No" />
+          <TableColumn fx:id="colcapacity" prefWidth="114.0" text="Capacity" />
+            <TableColumn fx:id="colstatus" prefWidth="103.0" text="Status" />
+            <TableColumn fx:id="colprice" prefWidth="87.0" text="Price" />
+            <TableColumn fx:id="colaction" prefWidth="150.0" text="Action" />
+        </columns>
+      </TableView>
+      <Label blendMode="MULTIPLY" layoutX="252.0" layoutY="14.0" prefHeight="27.0" prefWidth="109.0" text="Book Room" textAlignment="CENTER" textFill="#2980b9">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="252.0" layoutY="41.0" prefHeight="3.0" prefWidth="528.0" />
+   </children>
+</AnchorPane>
