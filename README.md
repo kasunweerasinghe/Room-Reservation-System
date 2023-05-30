@@ -14,7 +14,7 @@ the receptionist provides them with the relevant details by referring to the sys
 Once the customers make their pick, the receptionist will check the availability of 
 the rooms and inform them. If the requested type is not available, the receptionist 
 should find other suitable types and suggest them to the customer from the information 
-in the system.Ï
+in the system.
 
 ### Languages & Tools
 
